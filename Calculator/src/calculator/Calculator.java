@@ -32,7 +32,6 @@ public class Calculator {
         int operateur = scanner.nextInt(); // Récupère la valeur entière saisie et la stocke dans la variable operateur
 
         System.out.println("Vous avez saisi : " + operateur); // Affiche la valeur saisie
-        scanner.close(); // Ferme le scanner
         
         
         
@@ -75,8 +74,9 @@ public class Calculator {
                 System.out.println("Le resultat de la multiplication est:" + resultat);
         } else if (operateur==4) {
                 if (operande2 != 0) {
-                System.out.println("Le resultat de la soustraction est:" + resultat);
                     resultat = operande1 / operande2;
+                System.out.println("Le resultat de la division est:" + resultat);
+                    
                 } else {
                     System.out.println("Erreur: Division par zero n'est pas autorisé.");
                 }
@@ -88,7 +88,7 @@ public class Calculator {
                 
         }
         
-        System.out.println("The result is: " + resultat);
+        
         }
     }
 
