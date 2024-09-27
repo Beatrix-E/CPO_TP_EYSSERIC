@@ -27,8 +27,22 @@ public class TP1_manipNombresInt_EYSSERIC {
         System.out.print("Veuillez saisir le deuxième entier : ");
         int deuxiemeEntier = scanner.nextInt();
         
-        // Affichage des entiers saisis
-        System.out.println("Vous avez saisi : " + premierEntier + " et " + deuxiemeEntier);
+        // Calcul des résultats
+        int somme = premierEntier + deuxiemeEntier;
+        int difference = premierEntier - deuxiemeEntier;
+        int produit = premierEntier * deuxiemeEntier;
+        
+         // Calcul du quotient et du reste
+        int quotient = premierEntier / deuxiemeEntier;
+        int reste = premierEntier % deuxiemeEntier;
+        
+        // Affichage des résultats
+        System.out.println("Voici les résultats de vos opérations :");
+        System.out.println("La somme de " + premierEntier + " et " + deuxiemeEntier + " est : " + somme);
+        System.out.println("La différence entre " + premierEntier + " et " + deuxiemeEntier + " est : " + difference);
+        System.out.println("Le produit de " + premierEntier + " et " + deuxiemeEntier + " est : " + produit);
+        System.out.println("Le quotient entier de " + premierEntier + " divisé par " + deuxiemeEntier + " est : " + quotient);
+        System.out.println("Le reste de la division euclidienne de " + premierEntier + " par " + deuxiemeEntier + " est : " + reste);
         
     }
     
