@@ -43,7 +43,7 @@ public class TP1_convertisseur_EYSSERIC1 {
     }
     
     public static double KelvinVersCelcius(double kelvin) {
-        return kelvin - 273.15; // Conversion de Kelvin à Celsius
+        return kelvin - 273; // Conversion de Kelvin à Celsius
     }
 
     public static double FarenheitVersCelcius(double fahrenheit) {
