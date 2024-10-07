@@ -15,6 +15,9 @@ public class TP1_guessMyNumber_EYSSERIC1 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Random generateurAleat = new Random();
+        int n = generateurAleat.nextInt(100);
+        
     }
     
 }
