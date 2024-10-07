@@ -44,6 +44,11 @@ public class TP1_manipNombresInt_EYSSERIC {
         System.out.println("Le quotient entier de " + premierEntier + " divisé par " + deuxiemeEntier + " est : " + quotient);
         System.out.println("Le reste de la division euclidienne de " + premierEntier + " par " + deuxiemeEntier + " est : " + reste);
         
+        
+        
+        
+        
+   
     }
     
 }
