@@ -10,5 +10,17 @@ package tp2_bieres_eyssefric1;
  * @author beatr
  */
 public class BouteilleBiere {
+    String nom; 
+    double degreAlcool;
+    String brasserie;
+    boolean ouverte;
     
+    public void lireEtiquette() {
+        System.out.println("Bouteille de " + nom +" (" + degreAlcool +" degres) \nBrasserie : " + brasserie ) ;
+    }
+
+
 }
+
+
+
