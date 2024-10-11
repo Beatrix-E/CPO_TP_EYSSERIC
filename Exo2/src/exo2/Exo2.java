@@ -28,11 +28,12 @@ result=0;
 ind=1;
 while (ind <= nb) {
 result=result+ind;
-ind++};
+ind++;
 // Affichage du resultat
 System.out.println();
 System.out.println("La somme des "+ nb + "entiers est: "+result);
     }
 
     
+}
 }
