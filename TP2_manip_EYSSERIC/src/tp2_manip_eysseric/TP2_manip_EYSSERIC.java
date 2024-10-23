@@ -26,6 +26,20 @@ public class TP2_manip_EYSSERIC {
         Tartiflette temp = assiette1; // Stocke la référence de assiette1
         assiette1 = assiette2;        // assiette1 référence maintenant assiette2
         assiette2 = temp;             // assiette2 référence maintenant l'ancienne assiette1
+    
+        Moussaka[] moussakas = new Moussaka[10];
+        
+        // Création de 10 objets de type Moussaka
+        for (int i = 0; i < moussakas.length; i++) {
+            moussakas[i] = new Moussaka(300 + (i * 50)); // Par exemple, 300, 350, 400, etc.
+        }
+        
+        // Affichage des calories de chaque Moussaka
+        for (int i = 0; i < moussakas.length; i++) {
+            System.out.println("Moussaka " + (i + 1) + " : " + moussakas[i].nbCalories+ " calories");
+        }
+    
     }
+    
     
 }
