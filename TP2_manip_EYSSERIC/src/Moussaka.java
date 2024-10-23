@@ -8,5 +8,10 @@
  * @author beatr
  */
 public class Moussaka {
-    
+    int nbCalories;
+
+    public Moussaka(int nbCalories) {
+        this.nbCalories = nbCalories;
+    }
+     
 }
