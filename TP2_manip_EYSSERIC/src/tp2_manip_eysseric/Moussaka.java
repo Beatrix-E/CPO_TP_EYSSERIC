@@ -15,5 +15,10 @@ public class Moussaka {
     public Moussaka(int nbCalories) {
         this.nbCalories = nbCalories;
     }
+
+    @Override
+    public String toString() {
+        return "Moussaka{" + "nbCalories=" + nbCalories + '}';
+    }
      
 }
