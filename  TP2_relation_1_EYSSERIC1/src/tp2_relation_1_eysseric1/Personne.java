@@ -9,5 +9,20 @@ package tp2_relation_1_eysseric1;
  * @author beatr
  */
 public class Personne {
+    String prenom;
+    String nom;
+
+    public Personne(String prenom, String nom) {
+        this.prenom = prenom;
+        this.nom = nom;
+    }
+
+    @Override
+    public String toString() {
+        return "Personne{" + 
+                "prenom=" + prenom + ","
+                + " nom=" + nom + 
+                '}';
+    }
     
 }
