@@ -52,5 +52,24 @@ public class Personne {
     public Voiture[] getListeVoitures() {
         return liste_voitures;
     }
-}
 
+
+// Méthode pour ajouter une voiture
+    public boolean ajouter_voiture(Voiture voiture_a_ajouter) {
+        // Vérification si la voiture a déjà un propriétaire
+        if (voiture_a_ajouter.getProprietaire() != null) {
+            return false; // La voiture est déjà possédée
+        }
+        // Vérification de la capacité du propriétaire
+        if (nbVoitures >= 3) {
+            return false; // Limite atteinte
+        }
+        // Ajout de la voiture
+        liste_voitures[nbVoitures] = voiture_a_ajouter; // Ajoute la voiture au tableau
+        nbVoitures++; // Incrémente le compteur de voitures
+        voiture_a_ajouter.setProprietaire(this); // Définit le propriétaire de la voiture
+        return true; // Ajout réussi
+    }
+
+    // Autres méthodes...
+}
