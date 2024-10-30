@@ -9,23 +9,30 @@ package tp2_relation_1_eysseric1;
  * @author beatr
  */
 public class Voiture {
-    String nom;
+    String modele;
     String marque;
-    int age;
+    int places;
+    Personne proprietaire; // Attribut pour le propriétaire
 
-    public Voiture(String nom, String marque, int age) {
-        this.nom = nom;
+    // Constructeur
+    public Voiture(String modele, String marque, int places) {
+        this.modele = modele;
         this.marque = marque;
-        this.age = age;
+        this.places = places;
+        this.proprietaire = null; // Initialisé à NULL
     }
 
+    // Méthode toString
     @Override
     public String toString() {
-        return "Voiture{" + 
-                "nom=" + nom + ","
-                + "marque=" + marque 
-                + " age=" + age + 
+        return "Voiture{" +
+                "modele='" + modele + '\'' +
+                ", marque='" + marque + '\'' +
+                ", places=" + places +
+                ", proprietaire=" + (proprietaire != null ? proprietaire.getNom() : "Aucun") +
                 '}';
     }
-    
+    public void setProprietaire(Personne proprietaire) {
+        this.proprietaire = proprietaire;
+    }
 }
