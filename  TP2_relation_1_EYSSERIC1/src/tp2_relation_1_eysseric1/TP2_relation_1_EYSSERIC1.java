@@ -24,6 +24,31 @@ public class TP2_relation_1_EYSSERIC1 {
         System.out.println("liste des voitures disponibles "+ uneClio +
         "\n" + uneAutreClio + "\n" + une2008 + "\n" + uneMicra ) ;
         
+        
+         // Ajouter des voitures aux personnes
+        bob.ajouterVoiture(uneClio);
+        bob.ajouterVoiture(uneMicra);
+        reno.ajouterVoiture(une2008);
+
+        // Afficher les voitures et propriétaires
+        System.out.println("\nAprès ajout des propriétaires :");
+        System.out.println(uneClio);
+        System.out.println(une2008);
+        System.out.println(uneMicra);
+        
+        
+        bob.liste_voitures[0] = uneClio ;
+        bob.nbVoitures = 1 ;
+        uneClio.proprietaire = Bob ;
+        
+        System.out.println("la premiere voiture de Bob est " +bob.liste_voitures[0] ); 
     }
     
+    
+    
 }
+
+
+
+
+QUESTION 9
