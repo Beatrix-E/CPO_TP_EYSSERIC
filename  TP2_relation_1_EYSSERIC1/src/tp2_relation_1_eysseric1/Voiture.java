@@ -35,4 +35,8 @@ public class Voiture {
     public void setProprietaire(Personne proprietaire) {
         this.proprietaire = proprietaire;
     }
+
+    Object getProprietaire() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
 }
