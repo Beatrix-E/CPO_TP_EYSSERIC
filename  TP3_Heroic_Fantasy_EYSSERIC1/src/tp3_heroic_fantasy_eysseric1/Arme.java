@@ -9,18 +9,32 @@ package tp3_heroic_fantasy_eysseric1;
  *
  * @author beatr
  */
-public class Arme {
+public abstract class Arme {
     String nom;
     int niveauAttaque;
 
     public Arme(String nom, int niveau) {
+        if (niveauAttaque < 0 || niveauAttaque > 100) {
+            throw new IllegalArgumentException("Le niveau d'attaque doit être compris entre 0 et 100.");
+        }
         this.nom = nom;
         this.niveauAttaque = niveauAttaque;
     }
     
-    // Méthode pour obtenir le niveau d'attaque
+    
+    public String getNom() {
+        return this.nom;
+    }
+ 
     public int getNiveauAttaque() {
-        return niveauAttaque;
+        return this.niveauAttaque;
+    }
+
+    @Override
+    public String toString() {
+        return "Arme{" + "nom de l'arme: " + nom + ", niveau d'attaque: " + niveauAttaque + '}';
     }
     
+     // Méthode abstraite (si nécessaire) : les classes dérivées devront la définir
+    public abstract void utiliser();
 }
