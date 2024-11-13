@@ -26,7 +26,22 @@ public class TP3_Heroic_Fantasy_EYSSERIC1 {
         System.out.println(epee2);
         System.out.println(baton1);
         System.out.println(baton2);
+        
+        
+        import java.util.ArrayList;
+
+        // un ArrayList de chaînes de caractères
+        ArrayList<String> liste = new ArrayList<String>();
+
+        ArrayList<Arme> liste = new ArrayList<Arme>();
+        
+        
+        liste.add(epee1);
+        liste.add(epee2);
+        liste.add(baton1);
+        liste.add(baton2);
     }
+    
     
 }
 
