@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
 package tp3_heroic_fantasy_eysseric1;
-
+import java.util.ArrayList;
 /**
  *
  * @author beatr
@@ -27,21 +27,17 @@ public class TP3_Heroic_Fantasy_EYSSERIC1 {
         System.out.println(baton1);
         System.out.println(baton2);
         
-        
-        import java.util.ArrayList;
+       
 
-        // un ArrayList de chaînes de caractères
-        ArrayList<String> liste = new ArrayList<String>();
-
-        ArrayList<Arme> liste = new ArrayList<Arme>();
+        ArrayList<Arme> liste = new ArrayList<>();
         
         
         liste.add(epee1);
         liste.add(epee2);
         liste.add(baton1);
         liste.add(baton2);
+        
+        System.out.println(liste);
     }
-    
-    
 }
 
