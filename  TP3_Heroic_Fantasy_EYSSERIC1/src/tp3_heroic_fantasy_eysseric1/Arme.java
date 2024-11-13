@@ -35,6 +35,5 @@ public abstract class Arme {
         return "Arme{" + "nom de l'arme: " + nom + ", niveau d'attaque: " + niveauAttaque + '}';
     }
     
-     // Méthode abstraite (si nécessaire) : les classes dérivées devront la définir
-    public abstract void utiliser();
+   
 }
